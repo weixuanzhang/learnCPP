@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.13)
+set(CMAKE_CXX_STANDARD 11)
+project(C++Learning)
+add_subdirectory(C++Basics)
+add_subdirectory(plog-master)
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/plog-master/include")
+message(STATUS "foo include dir: ${CMAKE_CURRENT_SOURCE_DIR}")
